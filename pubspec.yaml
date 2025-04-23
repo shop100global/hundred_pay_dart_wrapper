@@ -1,6 +1,9 @@
 name: hundred_pay_hq_wrapper
-description: A starting point for Dart libraries or applications.
-version: 1.0.0
+description: A simple Dart/Flutter wrapper for the 100pay API to verify payments, preview conversions, and create sub-accounts.
+version: 0.0.1
+homepage: https://github.com/shop100global/hundred_pay_dart_wrapper
+repository: https://github.com/shop100global/hundred_pay_dart_wrapper
+issue_tracker: https://github.com/shop100global/hundred_pay_dart_wrapper/issues
 # repository: https://github.com/my_org/my_repo
 
 environment:
