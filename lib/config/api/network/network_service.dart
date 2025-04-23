@@ -1,5 +1,3 @@
-
-
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
@@ -12,8 +10,10 @@ class NetworkService {
 
   static final Map<String, http.Client> _activeClients = {};
 
-  static Map<String, String> _getHeaders(String token, String contentType) =>
-      {'Content-Type': contentType, 'Authorization': 'Bearer $token'};
+  static Map<String, String> _getHeaders(String token, String contentType) => {
+    'Content-Type': contentType,
+    'Authorization': 'Bearer $token',
+  };
 
   static Future<http.Response>? _createRequest({
     required String requestId,
@@ -48,8 +48,9 @@ class NetworkService {
     return responseFuture
         .timeout(
           const Duration(seconds: 120),
-          onTimeout: () =>
-              http.Response(jsonEncode({'error': 'Network timeout'}), 408),
+          onTimeout:
+              () =>
+                  http.Response(jsonEncode({'error': 'Network timeout'}), 408),
         )
         .whenComplete(() => _activeClients.remove(requestId));
   }
@@ -81,7 +82,7 @@ class NetworkService {
     }
   }
 
-static Future<http.StreamedResponse?> sendMultipartRequest({
+  static Future<http.StreamedResponse?> sendMultipartRequest({
     required String requestId,
     required RequestType requestType,
     required String url,

@@ -16,8 +16,8 @@ class HundredPayHqWrapperRepository {
       );
       return Threads().verifyPayamentThread(res);
     } catch (error, stackTrace) {
-      print("error is $error,");
-      print("error is located at $stackTrace");
+      log("error is $error,");
+      log("error is located at $stackTrace");
       throw error.toString();
     }
   }
@@ -39,8 +39,8 @@ class HundredPayHqWrapperRepository {
       );
       return Threads().createSubAccountsThread(res);
     } catch (error, stackTrace) {
-      print("error is $error,");
-      print("error is located at $stackTrace");
+      log("error is $error,");
+      log("error is located at $stackTrace");
       throw error.toString();
     }
   }
@@ -58,8 +58,8 @@ class HundredPayHqWrapperRepository {
       );
       return Threads().previewConversionThread(res);
     } catch (error, stackTrace) {
-      print("error is $error,");
-      print("error is located at $stackTrace");
+      log("error is $error,");
+      log("error is located at $stackTrace");
       throw error.toString();
     }
   }

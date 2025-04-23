@@ -4,6 +4,7 @@ import 'package:collection/collection.dart';
 
 final listEquals = const ListEquality().equals;
 final mapEquals = const MapEquality().equals;
+
 class ChargeModel extends ChargeEntity {
   @override
   final CustomerModel? customer;

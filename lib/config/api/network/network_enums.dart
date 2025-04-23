@@ -14,7 +14,7 @@ enum NetworkResponseErrorType {
   badGateway, // 502: Bad Gateway
   serviceUnavailable, // 503: Service Unavailable
   gatewayTimeout, // 504: Gateway Timeout
-  networkError // General network error (e.g., issues with connectivity)
+  networkError, // General network error (e.g., issues with connectivity)
 }
 
 enum CallBackParameterName { all, token }

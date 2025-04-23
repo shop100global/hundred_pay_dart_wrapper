@@ -15,13 +15,13 @@ class HundredPayHqWrapperDataProvider {
     );
     return NetworkHelper.filterResponse(
       callBack: (json) {
-        print("response is $json");
+        log("response is $json");
         return (json);
       },
       response: req,
       onFailureCallBackWithMessage: (errType, msg) {
-        print('error type is $errType');
-        print('error message is $msg');
+        log('error type is $errType');
+        log('error message is $msg');
         throw msg.toString();
       },
     );
@@ -62,13 +62,13 @@ class HundredPayHqWrapperDataProvider {
     );
     return NetworkHelper.filterResponse(
       callBack: (json) {
-        print("response is $json");
+        log("response is $json");
         return (json);
       },
       response: req,
       onFailureCallBackWithMessage: (errType, msg) {
-        print('error type is $errType');
-        print('error message is $msg');
+        log('error type is $errType');
+        log('error message is $msg');
         throw msg.toString();
       },
     );
@@ -103,13 +103,13 @@ class HundredPayHqWrapperDataProvider {
     );
     return NetworkHelper.filterResponse(
       callBack: (json) {
-        print("response is $json");
+        log("response is $json");
         return (json);
       },
       response: req,
       onFailureCallBackWithMessage: (errType, msg) {
-        print('error type is $errType');
-        print('error message is $msg');
+        log('error type is $errType');
+        log('error message is $msg');
         throw msg.toString();
       },
     );
